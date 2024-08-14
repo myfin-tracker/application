@@ -10,7 +10,7 @@ on:
 
 jobs:
   deploy:
-    uses: myfin-tracker/application/.github/workflows/application-depolyment.yml@main
+    uses: myfin-tracker/application/.github/workflows/deployment.yml@main
     with:
       DEPLOYMENT_HOST_SSH_PRIVATE_KEY: ${{ secrets.DEPLOYMENT_HOST_SSH_PRIVATE_KEY }}
       DEPLOYMENT_HOST_IP: ${{ secrets.DEPLOYMENT_HOST_IP }}
