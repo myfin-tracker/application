@@ -2,6 +2,13 @@ name: Application Deployment
 
 on:
   workflow_call:
+    secrets:
+      DEPLOYMENT_HOST_SSH_PRIVATE_KEY:
+        required: true
+      DEPLOYMENT_HOST_IP:
+        required: true
+      DEPLOYMENT_HOST_USERNAME:
+        required: true
 
 jobs:
   deploy:
